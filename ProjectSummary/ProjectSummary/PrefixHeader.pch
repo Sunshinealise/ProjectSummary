@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  ProjectSummary
+//
+//  Created by beyondsoft on 16/8/23.
+//  Copyright © 2016年 beyondsoft. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+typedef enum {
+    /** GET请求 **/
+    NTRequestMethodGET,
+    /** POST请求**/
+    NTRequestMethodPOST
+}NTRequestMethod;
+
+
+typedef enum {
+    NONE=0, //没有网络
+    IS3G, //3G网络
+    ISWIFI,  //
+    ERROR //顺序循环
+} NetWorkType;
+
+typedef enum {
+    WeekType=0,
+    MonthType,
+}TimeStateType;
+
+//设置颜色
+#define SetColor(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define TitleColor SetColor(70,198,32,1)  //标题颜色
+#define ContentColor SetColor(243,243,243,1)
+#define LineColor [UIColor colorWithHexColorString:@"e3e3e3"]
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define FontSet(size) [UIFont systemFontOfSize:size]
+#define IOS7 [[[UIDevice currentDevice] systemVersion ]floatValue]>6.0
+#define IOS8 [[[UIDevice currentDevice] systemVersion ]floatValue]>=8.0
+
+#import "Utils/Utils.h"
+#import "NSString+MD5.h"
+#import "MBProgressHUD.h"
+#import "UIButton+AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "UIButton+Extensions.h"
+#import "UIViewExt.h"
+#import "UIColor+BOBs.h"
+#import "NetService/NTNetUtil.h" 
+
+#endif /* PrefixHeader_pch */
