@@ -53,6 +53,9 @@
 		A30C99EE1D6C578A0048355E /* BOBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C99D01D6C578A0048355E /* BOBUtils.m */; };
 		A30C99EF1D6C578A0048355E /* PasswordBOBs.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C99D21D6C578A0048355E /* PasswordBOBs.m */; };
 		A30C99F01D6C578A0048355E /* SystemSoundBOBs.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C99D41D6C578A0048355E /* SystemSoundBOBs.m */; };
+		A32030A01D6FED2E0070F599 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = A320309C1D6FED2E0070F599 /* NSData+AES256.m */; };
+		A32030A11D6FED2E0070F599 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A320309E1D6FED2E0070F599 /* QRCodeGenerator.m */; };
+		A32030A21D6FED2E0070F599 /* 二维码使用.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A320309F1D6FED2E0070F599 /* 二维码使用.rtf */; };
 		A34473671D6D3B9400788905 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34473661D6D3B9400788905 /* BaseViewController.m */; };
 		A36923E81D6C25CB00F7BB19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A36923E71D6C25CB00F7BB19 /* main.m */; };
 		A36923EB1D6C25CB00F7BB19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A36923EA1D6C25CB00F7BB19 /* AppDelegate.m */; };
@@ -181,6 +184,11 @@
 		A30C99D21D6C578A0048355E /* PasswordBOBs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordBOBs.m; sourceTree = "<group>"; };
 		A30C99D31D6C578A0048355E /* SystemSoundBOBs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSoundBOBs.h; sourceTree = "<group>"; };
 		A30C99D41D6C578A0048355E /* SystemSoundBOBs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSoundBOBs.m; sourceTree = "<group>"; };
+		A320309B1D6FED2E0070F599 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		A320309C1D6FED2E0070F599 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		A320309D1D6FED2E0070F599 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		A320309E1D6FED2E0070F599 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		A320309F1D6FED2E0070F599 /* 二维码使用.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "二维码使用.rtf"; sourceTree = "<group>"; };
 		A34473651D6D3B9400788905 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A34473661D6D3B9400788905 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A36923E31D6C25CB00F7BB19 /* ProjectSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +408,18 @@
 			path = BOBUtils;
 			sourceTree = "<group>";
 		};
+		A320309A1D6FED2E0070F599 /* 二维码生成 */ = {
+			isa = PBXGroup;
+			children = (
+				A320309B1D6FED2E0070F599 /* NSData+AES256.h */,
+				A320309C1D6FED2E0070F599 /* NSData+AES256.m */,
+				A320309D1D6FED2E0070F599 /* QRCodeGenerator.h */,
+				A320309E1D6FED2E0070F599 /* QRCodeGenerator.m */,
+				A320309F1D6FED2E0070F599 /* 二维码使用.rtf */,
+			);
+			path = "二维码生成";
+			sourceTree = "<group>";
+		};
 		A36923DA1D6C25CB00F7BB19 = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +506,7 @@
 		A369245E1D6C3B3100F7BB19 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A320309A1D6FED2E0070F599 /* 二维码生成 */,
 				A30C99891D6C56A20048355E /* PlacehoderTextView */,
 				A30C998C1D6C56A20048355E /* ProgressStateCell */,
 				A30C99731D6C56790048355E /* DatePicterView */,
@@ -654,6 +675,7 @@
 				A30C99851D6C56790048355E /* 时间选择器 使用方法 in Resources */,
 				A369246F1D6C3B3100F7BB19 /* 星星调用.rtf in Resources */,
 				A369246C1D6C3B3100F7BB19 /* 调用.rtf in Resources */,
+				A32030A21D6FED2E0070F599 /* 二维码使用.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +762,7 @@
 				A30C99721D6C4C320048355E /* NSString+MD5.m in Sources */,
 				A30C99E61D6C578A0048355E /* UIScrollView+BOBs.m in Sources */,
 				A30C99971D6C56F50048355E /* UIButton+Extensions.m in Sources */,
+				A32030A01D6FED2E0070F599 /* NSData+AES256.m in Sources */,
 				A30C99911D6C56A20048355E /* SuggestionCollectScheduleCell.m in Sources */,
 				A30C99E11D6C578A0048355E /* UIDevice+BOBs.m in Sources */,
 				A30C99E81D6C578A0048355E /* UITextField+BOBs.m in Sources */,
@@ -748,6 +771,7 @@
 				A369246B1D6C3B3100F7BB19 /* LimitInput.m in Sources */,
 				A36923EB1D6C25CB00F7BB19 /* AppDelegate.m in Sources */,
 				A30C99E71D6C578A0048355E /* UITableView+BOBs.m in Sources */,
+				A32030A11D6FED2E0070F599 /* QRCodeGenerator.m in Sources */,
 				A30C99981D6C56F50048355E /* UIButton+touch.m in Sources */,
 				A30C99821D6C56790048355E /* DatePickerModel.m in Sources */,
 				A30C99901D6C56A20048355E /* HMTextView.m in Sources */,
